@@ -33,8 +33,17 @@ body {
 .nav-links li a:hover {
   color: #ffcc00;
 }
+.nav-link:hover {
+    text-decoration: underline;
+}
+.card:hover {
+    transform: scale(1.01);
+    transition: 0.3s;
+}
 section {
   padding: 4rem 2rem;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 #hero {
   background: #e3f2fd;
