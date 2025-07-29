@@ -1,63 +1,83 @@
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfólio Ricardo Junior</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricardo Junior - Portfólio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <h1 class="logo">Ricardo Junior</h1>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
-        <li><a href="curriculo.pdf" target="_blank">Currículo</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Ricardo Junior</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#curriculo">Currículo</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <section id="hero">
-    <h2>Bem-vindo ao meu portfólio!</h2>
-    <p>Profissional com experiência em ERPs, bancos de dados e integração de sistemas.</p>
-  </section>
+    <header class="bg-light text-center py-5" id="topo" data-aos="fade-down">
+        <div class="container">
+            <h1 class="fw-bold">Bem-vindo ao meu portfólio!</h1>
+            <p class="lead">Profissional com experiência em ERPs, bancos de dados e integração de sistemas.</p>
+        </div>
+    </header>
 
-  <section id="sobre">
-    <h2>Sobre Mim</h2>
-    <p>Sou analista de sistemas com experiência em ERPs, SQL Server, Oracle, PostgreSQL, Power BI, integrações e treinamentos. Atualmente desenvolvo soluções para integração de dados e automações empresariais.</p>
-  </section>
+    <section id="sobre" class="py-5 bg-white" data-aos="fade-up">
+        <div class="container">
+            <h2 class="mb-3">Sobre Mim</h2>
+            <p>Sou analista de sistemas com experiência em ERPs, SQL Server, Oracle, PostgreSQL, Power BI, integrações e treinamentos. Atualmente desenvolvo soluções para integração de dados e automações empresariais.</p>
+        </div>
+    </section>
 
-  <section id="projetos">
-    <h2>Projetos</h2>
-    <ul class="projetos-lista">
-      <li>
-        <h3>Integração ERP + Power BI</h3>
-        <p>Projeto que conecta dados do ERP a dashboards do Power BI com atualização automática.</p>
-      </li>
-      <li>
-        <h3>API WhatsApp + Java</h3>
-        <p>Implementação de envio de mensagens automáticas via WhatsApp utilizando Twilio/WPPConnect com Java.</p>
-      </li>
-      <li>
-        <h3>Canal YouTube Stickman</h3>
-        <p>Criação de conteúdo animado com stickman contando histórias do cotidiano com IA.</p>
-      </li>
-    </ul>
-  </section>
+    <section id="projetos" class="py-5 bg-light" data-aos="fade-up">
+        <div class="container">
+            <h2 class="mb-4">Projetos</h2>
+            <div class="card mb-3 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Integração ERP + Power BI</h5>
+                    <p class="card-text">Projeto que conecta dados do ERP a dashboards do Power BI com atualização automática.</p>
+                </div>
+            </div>
+            <div class="card mb-3 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">API WhatsApp + Java</h5>
+                    <p class="card-text">Automação para envio de alertas por grupos WhatsApp usando Java + WPPConnect.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Email: ricardo@example.com</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/ricardojunior" target="_blank">linkedin.com/in/ricardojunior</a></p>
-    <p>GitHub: <a href="https://github.com/ricardomts" target="_blank">github.com/ricardomts</a></p>
-  </section>
+    <section id="contato" class="py-5 bg-white" data-aos="fade-up">
+        <div class="container">
+            <h2 class="mb-3">Contato</h2>
+            <p>Entre em contato via <a href="mailto:seuemail@email.com">seuemail@email.com</a> ou pelo LinkedIn.</p>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Ricardo Junior</p>
-  </footer>
+    <section id="curriculo" class="py-5 bg-light" data-aos="fade-up">
+        <div class="container text-center">
+            <h2 class="mb-3">Currículo</h2>
+            <a class="btn btn-outline-primary" href="curriculo.pdf" download>Baixar Currículo em PDF</a>
+        </div>
+    </section>
+
+    <footer class="bg-primary text-white text-center py-3 mt-5">
+        <small>© 2025 Ricardo Junior</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
